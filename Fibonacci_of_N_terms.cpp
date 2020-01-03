@@ -15,7 +15,7 @@ int main()
     int i{2};           /// If f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5 put 1, it will run one more time 
     while(i<n){         /// as i keeps count of no. of terms
         sum=sum+c;
-        cout << c << ",";
+        cout << c << " ";
         a=b;
         b=c;
         c=a+b;
