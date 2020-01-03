@@ -1,3 +1,3 @@
-# cpp
-Repository for Coding Blocks Codes.
+# C++
+Repository for SRC.
 {BASICS}
