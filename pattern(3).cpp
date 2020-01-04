@@ -5,17 +5,15 @@
  ***
 ****
 
-*/
-
-/*
     1
-   123
-  12345
- 1234567
-123456789
+   12
+  123
+ 1234
+12345
+
 */
 
-#include<iostream>
+
 using namespace std;
 
 int main()
@@ -35,7 +33,7 @@ int main()
         ///stars
         int number = 1;
         while (number<=i){
-            cout << "*"<< "";
+            cout << "*"<< "";     /// for second pattern print number.
             number++;
         }
 
