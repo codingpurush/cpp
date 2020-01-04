@@ -5,6 +5,12 @@
  1234567
 123456789
 
+    *
+   ***
+  *****
+ *******
+*********
+
 */
 
 #include<iostream>
@@ -26,8 +32,8 @@ int main()
 
         ///numbers
         int number = 1;
-        while (number<=2*i - 1){
-            cout << number<< "";
+        while (number<=2*i - 1){       
+            cout << number<< "";        /// for second pattern print "*"
             number++;
         }
 
