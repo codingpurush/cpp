@@ -30,7 +30,7 @@ int main()
             space++;
         }
 
-        ///stars
+        ///stars or numbers
         int number = 1;
         while (number<=i){
             cout << "*"<< "";     /// for second pattern print number.
