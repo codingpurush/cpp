@@ -8,17 +8,12 @@ int main()
     cout << "Enter the number : ";
     cin >> n;
 
-    while(i<n){
-        if (n%i==0)
-        {
-            cout << "not prime" << endl;
-            break;
+    for(int i =2; i<n; i++){
+        if (n%i==0){
+            cout << "not prime";
+            return 0;
         }
-        else
-        {
-            cout << "prime" << endl;
-            break;
-        }
-        i=i+1;
     }
+    cout<<"prime";
+
 }
