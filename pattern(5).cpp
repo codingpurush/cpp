@@ -18,19 +18,19 @@ int main()
     while(i<=n)
     {
         int j=1;
-        while(j < n-i){
+        while(j <= n-i){            ///spaces
                 cout << " ";
                 j++;
         }
 
-        j=i;
+        j=i;                        /// Increasing numbers
         while(j <= 2*i-1){
             cout << j;
             j++;
         }
 
-        j=2*i-2;
-        while(j >= i){
+        j=2*i-2;                     /// J is init. to highest number 
+        while(j >= i){               /// Decreasing number
             cout << j;
             j--;
         }
