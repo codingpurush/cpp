@@ -22,3 +22,23 @@ int main(){
     cout << "Numbers are: ";
     PrimeUptoN(n);
 }
+
+#include<iostream>
+using namespace std;
+
+bool IsPrime(int n){
+
+    for(int i=2; i<n; i++){
+        if (n%i==0)
+            return false;
+        }
+    return true;
+    }
+
+  int main(){
+    int n; cin>>n;
+    cout << "Numbers are: ";
+    for (int i=2;i<=n;i++){
+        if (IsPrime(i)==true) cout <<i<< " ";
+        }
+ }
