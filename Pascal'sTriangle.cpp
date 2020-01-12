@@ -23,7 +23,16 @@ int ncr(int n,int r){
         }
 }
 
-
+/* Else we would have to init. fi, fj, fij;
+       for (int k=1;k<=i;k++) fi=fi*k;
+           for (int k=1;k<=j;k++) fj=fj*k;
+             for (int k=1;k<=i-j;k++) fij=fij*k;
+              fi=Factorial(i);
+             fj=Factorial(j);
+             fij=Factorial(i-j);
+            cout<<fi/(fj*fij)<<" ";
+            
+*/
 
 
 
