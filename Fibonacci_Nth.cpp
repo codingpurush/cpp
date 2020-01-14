@@ -3,18 +3,13 @@ using namespace std;
 
 int main()
 {
-    int n,a=-1,b=1,c=a+b,i=1;
-    cin >> n;
-    while(i<n){
-        ///cout << c << " ";
+    int n; cin>> n;
+    int a=-1,b=1,c=a+b,i;
+
+    for (i=1; i<n; i++){   /// If don't wanna count 0 as 1st term put i=0.
         a=b;
         b=c;
         c=a+b;
-        i++;
-        }
-        if (i==n) cout << c; else cout << "no";
+    }
+    if (i==n) cout << c ;
 }
-
-
-
-
