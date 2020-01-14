@@ -5,27 +5,18 @@ using namespace std;
 
 int main()
 {
-    ///Fibonacci series of N terms.
-
-    int n{0}, a{0}, b{1}, c=a+b , sum{0};
-    cin >> n;
-
-    cout <<a<<" "<<b<<" ";
-
-    int i{2};           /// If f0 = 0, f1 = 1, f2 = 1, f3 = 2, f4 = 3, f5 = 5 put 1, it will run one more time 
-    while(i<n){         /// as i keeps count of no. of terms, here a = 0 is taken as 1st term not 0th
-        sum=sum+c;
+    int n;cin>>n;
+    int a=-1,b=1,c=a+b,i,sum=0;
+    
+    for (i=0;i<n;i++){
         cout << c << " ";
+        sum+=c;
         a=b;
         b=c;
         c=a+b;
-        i++;
     }
-
-    cout << "\n";
-    cout << "Number of terms printed : " << i<<endl;
-    cout <<"The sum of this series is : "<< sum+1<<endl;
-    return 0;
-
-
+    cout << endl;
+    cout << "Number of terms printed = "<<i<<"\n";
+    cout << "sum is = "<< sum;
 }
+
