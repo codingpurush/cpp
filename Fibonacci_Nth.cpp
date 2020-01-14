@@ -1,14 +1,20 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int n; cin>>n;
-    int a=0,b=1;
-    for(int i=1;i<n;i=i+1){      /// you can use i=0 if you don't wanna include 0 and start counting from 1.
-        ///cout<<a<<" ";
-        int s=a+b;
+int main()
+{
+    int n,a=-1,b=1,c=a+b,i=1;
+    cin >> n;
+    while(i<n){
+        ///cout << c << " ";
         a=b;
-        b=s;
-    }
-    cout<<a;
+        b=c;
+        c=a+b;
+        i++;
+        }
+        if (i==n) cout << c; else cout << "no";
 }
+
+
+
+
