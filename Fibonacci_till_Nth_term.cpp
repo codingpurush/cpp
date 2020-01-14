@@ -5,25 +5,17 @@ using namespace std;
 
 int main()
 {
-    int n{0}, a{0}, b{1}, c=a+b , sum{0};
-    cin >> n;
-
-    cout <<a<<" "<<b<<" ";
-
-    int i{2};               /// i is counting the number of terms printed 
-    while(c <= n){
+    int n;cin>>n;
+    int a=-1,b=1,c=a+b,i=0,sum=0;
+    while(c<=n){
         cout << c << " ";
-        sum=sum+c;          
+        i++;
+        sum+=c;
         a=b;
         b=c;
         c=a+b;
-        i++;
     }
-
-    cout << "\n";
-    cout << "Number of terms printed : " << i << endl;
-    cout << "The sum of this series is : "<< sum+1 << endl;
-    return 0;
-
-
+    cout << endl;
+    cout << "Number of terms printed = "<<i<<"\n";
+    cout << "sum is = "<<sum;
 }
