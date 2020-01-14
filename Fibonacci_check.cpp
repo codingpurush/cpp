@@ -3,18 +3,13 @@ using namespace std;
 
 int main()
 {
-    int n,a=-1,b=1,c=a+b,i=1;
-    cin >> n;
+    int n; cin>> n;
+    int a=-1,b=1,c=a+b;
+
     while(c<n){
-        ///cout << c << " ";
         a=b;
         b=c;
         c=a+b;
-        i++;
-        }
-        if (c==n) cout << n << " is in series."; else cout << n <<" is not in series.";
+    }
+    if (c==n) cout << "yes" ; else cout << "no" ;
 }
-
-
-
-
