@@ -7,7 +7,7 @@ int main()
 {
     int n,i,res=0; cin>>n;
     int arr[]={1,5,3,6,4,8,9};
-    int x=sizeof(arr)/4;
+    int x=sizeof(arr)/sizeof(arr[0]);
 
     for (i=0;i<x;i++){
           if(arr[i]==n){
@@ -25,22 +25,21 @@ int main()
 #include<iostream>
 using namespace std;
 
-int linearsearch(int arr[],int n,int x)
+int lsearch(int arr[],int x,int n)
 {
-    int i;
-    for (i=0;i<n;i++)
-        if (arr[i]==x)
+    for(int i=0;i<x;i++){
+        if (arr[i]==n)
             return i;
+    }
     return -1;
 }
 
 int main()
 {
-    int arr[] = {3,4,1,7,5};
-    int n = sizeof(arr)/4;
-    int x;cin>>x;
-    cout << linearsearch(arr,n,x);
+    int n;cin>>n;
+    int arr[]={1,4,6,7,11,9};
+    int x=sizeof(arr)/sizeof(arr[0]);
+    cout << lsearch(arr,x,n);
     return 0;
 }
-
 
