@@ -9,7 +9,7 @@ int main()
     ///input
     for (int i=0;i<n;i++) cin>>arr[i];
     for (int i=0;i<n;i++) cout<<arr[i]<< " ";cout << endl;
-
+    for (int i=0;i<n;i++) cout<<arr[i]*arr[i] << " ";
     for (int i=n-1;i>=0;i--) cout << arr[i] << " ";
 
 }
