@@ -1,5 +1,4 @@
-#include<iostream>
-#include<sstream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int sumdigits(int n)
@@ -9,17 +8,35 @@ int sumdigits(int n)
     return (n%10+sumdigits(n / 10));
 }
 
-int main()
-{
-    char num[10];
-    cin>>num;
-    cout<<"String is  = "<<num<<endl;
-    string s = num;
-    stringstream number(s);
-    int x = 0;
-    number >> x; /// x holds number
-    cout << "number = "<<x <<endl;
+int length(char input[]){
+	int len = 0;
+	for(int i =0;input[i] != '\0';i++){
+		len++;
+	}
+	return len;
+}
 
-    cout<<"Sum is  =  "<<sumdigits(x);
+
+int stringToNumber(char input[], int last)
+{
+	if(last == 0){
+		return input[last] - '0';
+	}
+
+	int smallAns = stringToNumber(input,last-1);
+	int a = input[last] - '0';
+	return smallAns * 10 + a;
+}
+
+int stringToNumber(char input[]){
+	int len = length(input);
+	int n = stringToNumber(input,len-1);
+    return sumdigits(n);
+}
+
+int main(){
+	char input[50];
+	cin>>input;
+	cout<<stringToNumber(input)<<endl;
     return 0;
 }
